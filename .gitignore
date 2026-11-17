@@ -1,0 +1,6 @@
+.env
+*.pyc
+.playwright-mcp
+docs
+retail-ops-studio
+retail-case-lab

@@ -1,0 +1,21 @@
+product_key,product_name,operating_region,current_stock_units,reorder_trigger_level,safety_stock_units,supplier_lead_days
+PROD_COLA,Spark Cola 500ml,NORTH,8500,3000,1500,5
+PROD_COLA,Spark Cola 500ml,SOUTH,8200,3000,1500,5
+PROD_COLA,Spark Cola 500ml,EAST,8700,3000,1500,5
+PROD_COLA,Spark Cola 500ml,WEST,8400,3000,1500,5
+PROD_OJ,Fresh Orange Juice 1L,NORTH,4200,2000,800,7
+PROD_OJ,Fresh Orange Juice 1L,SOUTH,3800,2000,800,7
+PROD_OJ,Fresh Orange Juice 1L,EAST,4100,2000,800,7
+PROD_OJ,Fresh Orange Juice 1L,WEST,4000,2000,800,7
+PROD_CHIPS,Classic Potato Chips,NORTH,2200,2500,1000,5
+PROD_CHIPS,Classic Potato Chips,SOUTH,1800,2500,1000,5
+PROD_CHIPS,Classic Potato Chips,EAST,2100,2500,1000,5
+PROD_CHIPS,Classic Potato Chips,WEST,1900,2500,1000,5
+PROD_CEREAL,Wholegrain Cereal,NORTH,12000,4000,1500,6
+PROD_CEREAL,Wholegrain Cereal,SOUTH,11500,4000,1500,6
+PROD_CEREAL,Wholegrain Cereal,EAST,11800,4000,1500,6
+PROD_CEREAL,Wholegrain Cereal,WEST,12200,4000,1500,6
+PROD_COFFEE,Premium Ground Coffee,NORTH,900,1500,500,14
+PROD_COFFEE,Premium Ground Coffee,SOUTH,850,1500,500,14
+PROD_COFFEE,Premium Ground Coffee,EAST,920,1500,500,14
+PROD_COFFEE,Premium Ground Coffee,WEST,880,1500,500,14

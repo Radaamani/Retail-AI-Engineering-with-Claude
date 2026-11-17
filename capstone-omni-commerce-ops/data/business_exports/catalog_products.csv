@@ -1,0 +1,6 @@
+product_key,product_name,product_category,unit_retail_price,unit_wholesale_cost
+PROD_COLA,Spark Cola 500ml,Beverages,1.99,0.85
+PROD_OJ,Fresh Orange Juice 1L,Beverages,3.49,1.40
+PROD_CHIPS,Classic Potato Chips,Snacks,2.79,1.10
+PROD_CEREAL,Wholegrain Cereal,Breakfast,4.99,2.00
+PROD_COFFEE,Premium Ground Coffee,Beverages,12.99,5.50
