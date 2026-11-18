@@ -1,8 +1,9 @@
 from os import getenv
-from fastapi import FastAPI, HTTPException, Path
 from faker import Faker
 from loguru import logger
 from pydantic import BaseModel, StrictInt
+
+from fastapi import FastAPI, HTTPException, Path
 from sqlmodel import SQLModel, Field, Session, create_engine, select
 
 
@@ -60,7 +61,7 @@ def get_account(account_id):
     return account
 
 
-# Endpoints
+# API Endpoints
 @app.post("/accounts/{account_id}/deposit")
 def deposit(account_id: str, request: AmountRequest):
     account = get_account(account_id)
