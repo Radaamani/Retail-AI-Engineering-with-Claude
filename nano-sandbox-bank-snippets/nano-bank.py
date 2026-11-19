@@ -1,10 +1,11 @@
-from os import getenv
+import uvicorn
+from fastapi import FastAPI, HTTPException, Path
+from sqlmodel import SQLModel, Field, Session, create_engine, select
+
 from faker import Faker
 from loguru import logger
 from pydantic import BaseModel, StrictInt
-
-from fastapi import FastAPI, HTTPException, Path
-from sqlmodel import SQLModel, Field, Session, create_engine, select
+from os import getenv
 
 
 # Models
@@ -102,6 +103,7 @@ def statement(account_id: str, year: int = Path(ge=1), month: int = Path(ge=1, l
 
 
 # AI exercises
+# Required libraries: litellm & anthropic
 def chatbot(message: str):
     pass
 
@@ -115,6 +117,5 @@ def agent(query: str):
 
 
 if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(app)
+    port = 8000
+    uvicorn.run(app, port= port, host="0.0.0.0")
