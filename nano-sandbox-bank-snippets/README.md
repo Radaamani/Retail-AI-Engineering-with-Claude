@@ -7,16 +7,17 @@ A small FastAPI + SQLite banking API for classroom exercises. The `chatbot`, `ra
 Requires Python 3.10+ and `uv`. From this folder:
 
 ```bash
-uv init .
-uv python pin 3.13
-uv add fastapi uvicorn sqlmodel faker loguru httpx
+# Skip if `pyproject.toml` already exists.
+# It means python environment is initialized
+uv init # LIKE git init 
+uv add fastapi uvicorn sqlmodel faker loguru httpx # LIKE git add <file_name>
 uv sync
 ```
-```bash
-uv run nano-bank.py
 
+```bash
+# Running the program, always use UV to run
+uv run nano-bank.py
 ```
-Skip `uv init .` if `pyproject.toml` already exists.
 
 Open http://127.0.0.1:8000/docs to try the API.
 
