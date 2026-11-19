@@ -1,0 +1,21 @@
+[project]
+name = "retail-ai-engineering-with-claude"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Claude Code", email = "user012024z@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=2.10.0",
+    "litellm>=1.110.0",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+retail-ai-engineering-with-claude = "retail_ai_engineering_with_claude:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
