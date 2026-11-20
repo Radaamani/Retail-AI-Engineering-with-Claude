@@ -19,4 +19,4 @@ def ask_claude(question):
 
 if __name__ == "__main__":
     demo = gr.Interface(fn=ask_claude, inputs="textbox", outputs="textbox")
-    demo.launch(server_name="127.0.0.1", share=False)
+    demo.launch(server_name="127.0.0.1", share=True)

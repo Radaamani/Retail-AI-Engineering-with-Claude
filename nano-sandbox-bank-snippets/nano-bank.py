@@ -105,7 +105,17 @@ def statement(account_id: str, year: int = Path(ge=1), month: int = Path(ge=1, l
 # AI exercises
 # Required libraries: litellm & anthropic
 def chatbot(message: str):
-    pass
+    from anthropic import Anthropic
+    import os
+
+    anthropic = Anthropic(api_key=os.environ["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"])
+    
+    response = client.messages.create(
+            model="claude-haiku-5-5",
+            max_tokens=124,
+            messages=[{"role": "user", "content": message}],
+        )
+    return response.content[0].text
 
 
 def rag(question: str):
@@ -115,7 +125,14 @@ def rag(question: str):
 def agent(query: str):
     pass
 
+def bank_interface():
+    import gradio as gr
+
+    demo = gr.Interface(fn=chatbot, inputs="textbox", outputs="textbox")
+    demo.launch(server_name="127.0.0.1", share=True)
 
 if __name__ == "__main__":
     port = 8000
+    bank_interface()
     uvicorn.run(app, port= port, host="0.0.0.0")
+
